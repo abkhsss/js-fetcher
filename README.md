@@ -7,3 +7,6 @@ easy lib for depend eject info getting
 
 Todo
  check ava
+
+ check pwa comp
+ 
