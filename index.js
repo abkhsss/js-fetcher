@@ -22,3 +22,19 @@ app.post("/checkStatus", (req, res) => {
 app.post("/checkAvail", (req, res) => {
   res.status(200).send(dep.HeartBeat.getBeat())
 })
+
+
+
+app.route("/CheckMark", (req, res) => {
+  res.status(200).send(dep.CheckMarks.getLastCheck())
+})
+
+
+app.route("/CheckBook", (req, res) => {
+  res.status(200).send(dep.CheckMarks.getLastCheck())
+})
+
+
+app.route("/CheckLeft", (req, res) => {
+  res.status(200).send(dep.CheckMarks.getLastCheck())
+})
