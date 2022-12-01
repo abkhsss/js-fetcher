@@ -13,6 +13,10 @@ app.route("/salam", (req, res) => {
 })
 
 
-app.route("/checkStatus", (req, res) => {
+app.get("/checkStatus", (req, res) => {
   res.status(200).send(dep.CallMain().getStatus())
+})
+
+app.get("/checkAvail", (req, res) => {
+  res.status(200).send(dep.HeartBeat.getBeat())
 })
