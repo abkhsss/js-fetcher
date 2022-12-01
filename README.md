@@ -10,3 +10,5 @@ Todo
 
  check pwa comp
  
+ check mem caching
+ 
