@@ -12,3 +12,4 @@ Todo
  
  check mem caching
  
+ checl force bulking
