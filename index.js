@@ -12,11 +12,29 @@ app.route("/salam", (req, res) => {
   res.status(200).send()
 })
 
+// post method because this is an api for pwa apps
 
-app.get("/checkStatus", (req, res) => {
+
+app.post("/checkStatus", (req, res) => {
   res.status(200).send(dep.CallMain().getStatus())
 })
 
-app.get("/checkAvail", (req, res) => {
+app.post("/checkAvail", (req, res) => {
   res.status(200).send(dep.HeartBeat.getBeat())
+})
+
+
+
+app.route("/CheckMark", (req, res) => {
+  res.status(200).send(dep.CheckMarks.getLastCheck())
+})
+
+
+app.route("/CheckBook", (req, res) => {
+  res.status(200).send(dep.CheckMarks.getLastCheck())
+})
+
+
+app.route("/CheckLeft", (req, res) => {
+  res.status(200).send(dep.CheckMarks.getLastCheck())
 })
